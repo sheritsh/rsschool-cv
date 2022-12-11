@@ -38,8 +38,9 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-## Portfolio:
-_in/dev_
+## Courses:
+* Complete C course at Codecademy
+![codecademy certificate](https://ibb.co/XXwVcGL = )
 
 ## Education:
 **2015-2019: Volgograd State Agrarian University** - Bachelor of Agronomic Sciences
