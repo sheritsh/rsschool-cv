@@ -49,8 +49,8 @@ int main(int argc, char *argv[]) {
 ![codecademy certificate](https://i.ibb.co/dBh78HM/Screenshot-2022-11-05-at-18-11-47.png)
 
 ## Education:
-**2015-2019: Volgograd State Agrarian University** - Bachelor of Agronomic Sciences
-**since 2022: School 21, Kazan** - studying computer science
+* **2015-2019: Volgograd State Agrarian University** - Bachelor of Agronomic Sciences
+* **since 2022: School 21, Kazan** - studying computer science
 
 ## Languages:
 * Ukrainian - Native
