@@ -1,5 +1,8 @@
 # Oleg Polovinko
 **Junior Frontend Developer**
+<div style="text-align: right">
+![My Photo](https://i.ibb.co/C0Fy6SL/2022-11-25-22-47.png)
+</div>
 ## Contacts:
 * Email: ospolovinko@gmail.com
 * LinkedIn: https://www.linkedin.com/in/oleg-polovinko-10b95b172/
