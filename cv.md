@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
 
 ## Courses:
 * Complete C course at Codecademy
-![codecademy certificate](https://ibb.co/XXwVcGL)
+![codecademy certificate](https://i.ibb.co/dBh78HM/Screenshot-2022-11-05-at-18-11-47.png)
 
 ## Education:
 **2015-2019: Volgograd State Agrarian University** - Bachelor of Agronomic Sciences
