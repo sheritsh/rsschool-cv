@@ -1,27 +1,28 @@
 # Oleg Polovinko
-
+**Junior Frontend Developer**
 ## Contacts:
 * Email: ospolovinko@gmail.com
 * LinkedIn: https://www.linkedin.com/in/oleg-polovinko-10b95b172/
 * Telegram: https://t.me/rockstarhelge
 * Vk: https://vk.com/helgen
 
-## Profile:
+## Briefly About Myself:
 Entered **RS-school** to successfully complete and start my career as a programmer. All or nothing.
 
-Therefore, I will try my best. Study at school 21 in Kazan at the same time.
+Therefore, I will try my best. Study at School 21 in Kazan at the same time.
 
 I study everything new extremely quickly and nobody can put out my seniority to become a front-end programmer!
 
 ## Skills:
 * C 
-* HTML
-* CSS
-* JavaScript 
-* Git 
-* Python
+* HTML5, CSS3
+* JavaScript Basics
+* Git, GitLab, GitHub
+* Python Basics
+* Adobe PS 
 
 ## Code example:
+[My GitHub](https://github.com/sheritsh)
 ``` 
 int main(int argc, char *argv[]) {
   options flags = {0};
