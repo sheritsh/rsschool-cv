@@ -14,7 +14,7 @@
 ## Briefly About Myself:
 Entered **RS-school** to successfully complete and start my career as a programmer. All or nothing.
 
-Therefore, I will try my best. Study at School 21 in Kazan at the same time.
+Therefore, I will try my best. Study at **School 21** in Kazan at the same time.
 
 I study everything new extremely quickly and nobody can put out my seniority to become a front-end programmer!
 
@@ -45,6 +45,7 @@ int main(int argc, char *argv[]) {
 
 ## Courses:
 * Complete C course at Codecademy
+
 ![codecademy certificate](https://i.ibb.co/dBh78HM/Screenshot-2022-11-05-at-18-11-47.png)
 
 ## Education:
