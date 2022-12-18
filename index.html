@@ -51,61 +51,27 @@
         <section>
         <h2>Code example:</h2> 
         <div class="code-field">
-        <code><pre>
-int s21_sprintf(char *str, const char *format, ...) {
-  int folded_char_index = 0;
-  handle_format print_format = {0};
-  va_list arguments;
-  va_start(arguments, format);
-  for (char *ch = (char *)format; *ch; ch++) {
-      if (*ch != '%') {
-          str[folded_char_index] = *ch;
-          folded_char_index++;
-          // % handler && prevent going beyond the borders
-      } else if (*ch == '%' and *(ch+1)) { 
-          int spec_position = 0; // position of spicifier after %
-          char *spec_end = NULL; // pointer to this position
-          if (spec_end = strpbrk(ch+1, SPECIFIERS_LIST)) {
-              spec_position = spec_end - ch;
-              get_flags(ch, &print_format, spec_position);
-              get_width(ch, &print_format, arguments, 
-                        spec_position);
-              get_precision(ch, &print_format, arguments,
-                            spec_position);
-              get_length(ch, &print_format, spec_position);
-              get_specifier(ch, &print_format, spec_position);
-              // printf("%d", spec_position);
-
-          // make decision and print it into str with right format
-          // now insert specifier with right format 
-              folded_char_index += 
-              format_handler(str+folded_char_index, str, 
-                            print_format, arguments); 
-
-              ch += spec_position;
-          } else {
-              // not found spec
-              printf("No specs found\n");
-          }
-          
-      } else {
-          printf("%% on the last place\n");
-      }
-      // nullify print_format = {0}
-      memset(&print_format, 0, sizeof(handle_format));
-  }
-  str[folded_char_index] = '\0';
-  va_end(arguments);
-  return (int)strlen(str);
-}
-      </pre>
+        <code>
+          int main(int argc, char *argv[]) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;options flags = {0};<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;char template_buffer[256];<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;int error_flag = 0;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;patterns_list *tmp =<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;options_parser(argc, argv, &flags, &template_buffer[0],<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&error_flag);<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;if (argv[optind] != NULL) {<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;search_regex(argv, flags, tmp);<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;free_list(tmp);<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;return 0;<br>
+          }<br>
         </code>
         </div>
       </section>
 
       <section>
         <h2>Courses:</h2>
-        <img src="src/Screenshot-2022-11-05-at-18-11-47.png" alt="codecademy certificate" width="600px">
+        <img src="src/Screenshot-2022-11-05-at-18-11-47.png" alt="codecademy certificate" style="width:600px;">
       </section>
 
         <section>
