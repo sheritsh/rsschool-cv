@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+<link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Oleg Polovinko CV</title>
+  </head>
+  <body class="page">
+    <header class="page-header">
+      <div class="container">
+        <div><h1 class="page-title">Polovinko Oleg CV</h1>
+        <p>RS School Student<br>School 21 Student // sheritsh<br>My GitHub: <a href="https://github.com/sheritsh">https://github.com/sheritsh</a></p>
+      <p>Location: Russia, Kazan</p></div>
+      <div class="avatar"><img src="src/photo_2.png" alt="Polovinko Photo"></div>
+    </div>
+    </header>
+    <main>
+      <div class="about container">
+       
+        <section>
+        <h2>Contacts:</h2>
+        <ul>
+        <li>Email: <a href="mailto:ospolovinko@gmail.com">ospolovinko@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/oleg-polovinko-10b95b172">https://www.linkedin.com/in/oleg-polovinko-10b95b172</a></li>       
+        <li>Telegram: <a href="https://t.me/rockstarhelge">https://t.me/rockstarhelge</a></li>        
+        <li>Vk: <a href="https://vk.com/helgen">https://vk.com/helgen</a></li>
+        </ul>
+        </section>
+
+        <section>
+        <h2>Profile:</h2>
+        <p>Entered <b>RS-school</b> to successfully complete and start my career as a programmer. All or nothing.</p>        
+        <p>Therefore, I will try my best. Study at <b>School 21</b> in Kazan at the same time.</p>        
+        <p>I study everything new extremely quickly and nobody can put out my seniority to become a front-end programmer!</p>
+        </section>
+
+        <section>
+        <h2>Skills:</h2>
+          <ul>
+            <li>C</li>
+            <li>Bash</li>
+            <li>HTML5, CSS3</li>
+            <li>JavaScript Basics</li>
+            <li>Git, GitLab, GitHub</li>
+            <li>Python Basics</li>
+            <li>Adobe PS</li>
+          </ul>
+        </section>
+
+        <section>
+        <h2>Code example:</h2> 
+        <div class="code-field">
+        <code><pre>
+int s21_sprintf(char *str, const char *format, ...) {
+  int folded_char_index = 0;
+  handle_format print_format = {0};
+  va_list arguments;
+  va_start(arguments, format);
+  for (char *ch = (char *)format; *ch; ch++) {
+      if (*ch != '%') {
+          str[folded_char_index] = *ch;
+          folded_char_index++;
+          // % handler && prevent going beyond the borders
+      } else if (*ch == '%' and *(ch+1)) { 
+          int spec_position = 0; // position of spicifier after %
+          char *spec_end = NULL; // pointer to this position
+          if (spec_end = strpbrk(ch+1, SPECIFIERS_LIST)) {
+              spec_position = spec_end - ch;
+              get_flags(ch, &print_format, spec_position);
+              get_width(ch, &print_format, arguments, 
+                        spec_position);
+              get_precision(ch, &print_format, arguments,
+                            spec_position);
+              get_length(ch, &print_format, spec_position);
+              get_specifier(ch, &print_format, spec_position);
+              // printf("%d", spec_position);
+
+          // make decision and print it into str with right format
+          // now insert specifier with right format 
+              folded_char_index += 
+              format_handler(str+folded_char_index, str, 
+                            print_format, arguments); 
+
+              ch += spec_position;
+          } else {
+              // not found spec
+              printf("No specs found\n");
+          }
+          
+      } else {
+          printf("%% on the last place\n");
+      }
+      // nullify print_format = {0}
+      memset(&print_format, 0, sizeof(handle_format));
+  }
+  str[folded_char_index] = '\0';
+  va_end(arguments);
+  return (int)strlen(str);
+}
+      </pre>
+        </code>
+        </div>
+      </section>
+
+      <section>
+        <h2>Courses:</h2>
+        <img src="src/Screenshot-2022-11-05-at-18-11-47.png" alt="codecademy certificate" width="600px">
+      </section>
+
+        <section>
+          <h2>Portfolio:</h2>
+          in/dev<br><br>
+          <a href="https://sheritsh.github.io/rsschool-cv/cv">My CV in Markdown available here</a>
+        </section>
+
+        <section>
+        <h2>Education:</h2>
+        <ul>
+          <li><b>2015-2019: Volgograd State Agrarian University</b> - Bachelor of Agronomic Sciences</li>
+          <li><b>September 2022 - now: School 21, Kazan</b> - studying computer science</li>
+        </ul>
+        
+      </section>
+
+        <section>
+          <h2>Languages:</h2>
+          <ul>
+            <li><b>Ukrainian</b> - Native</li>
+            <li><b>Russian</b> - Native</li>
+            <li><b>English</b> - Intermediate/Upper-intermediate</li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <p>© Oleg Polovinko</p>
+        <p>2022</p>
+      </div>
+    </footer>
+  </body>
+
+</html>
