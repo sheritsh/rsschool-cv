@@ -55,8 +55,8 @@
             &nbsp;&nbsp;&nbsp;&nbsp;char template_buffer[256];<br>
             &nbsp;&nbsp;&nbsp;&nbsp;int error_flag = 0;<br>
             &nbsp;&nbsp;&nbsp;&nbsp;patterns_list *tmp =<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;options_parser(argc, argv, &flags, &template_buffer[0],<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&error_flag);<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;options_parser(argc, argv, &amp;flags, &amp;template_buffer[0],<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&amp;error_flag);<br>
             &nbsp;&nbsp;&nbsp;&nbsp;if (argv[optind] != NULL) {<br>
               &nbsp;&nbsp;&nbsp;&nbsp;search_regex(argv, flags, tmp);<br>
               &nbsp;&nbsp;&nbsp;&nbsp;}<br>
