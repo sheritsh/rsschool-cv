@@ -91,3 +91,11 @@ section {
   margin: 0;
   padding: 0;
 }
+
+#certificate {
+  width: 600px;
+}
+
+#logo_rs {
+  width: 100px;
+}
